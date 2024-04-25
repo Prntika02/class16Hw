@@ -1,0 +1,401 @@
+/* common css section start */
+:root{
+    --primary-color: #0f2f44;  
+    --light-color:#fefefe;
+    --white-color:#ffffff;
+    --hover-color:#ffc712;
+    --hover-background:#fff9e6;
+    --icon-color:#999999;
+    --text-color:#444444;
+    --border-color:#dedede;
+    --heading-font: 'Abril Fatface', serif;
+    --secondary-font: 'Ubuntu', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --about-color:#0f2f44;
+    --box-color:#e2e2e2;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+}
+
+
+h1,h2{
+    font-family:var(--heading-font);
+    
+}
+
+h3,h4,h5,h6,a,button{
+    font-family:var(--secondary-font);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+img{
+    display: block;
+} */
+
+ul{
+    list-style-type: none;
+}
+
+.w-100{
+    width: 100%;
+}
+.w-60{
+    width: 60%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+
+.w-3{
+    width: calc(100% / 3);
+}
+
+.w-20{
+    width: 20%;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+/* common css section end */
+
+
+
+/* head css section start */
+
+#header #top_bar{
+    background-color:var(--primary-color);
+}
+
+#header #top_bar .row{
+    justify-content: space-between;
+}
+
+#header #top_bar .p1{
+    font-size: 16px;
+    color:var(--light-color);
+    line-height: 24px;
+    font-family: var(--secondary-font);
+    padding: 13px 0;
+    font-family: 'Open Sans', sans-serif;
+};
+
+/* head css section end */
+
+
+/* nav css section start */
+#nav{
+    background-color: white;
+    text-align: justify;
+   
+}
+
+
+#nav div.row{
+    align-items: center;
+}
+
+#nav .logo{
+    width: 25%;
+}
+
+#nav div.menu{
+    width: 75%;
+}
+
+#nav div .menu ul{
+    justify-content: flex-end;
+}
+
+#nav .menu ul li a{
+    color:var(--primary-color);
+    text-transform: capitalize;
+    padding: 35.5px 19px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.7s;
+  
+}
+
+#nav .menu ul li a:hover,
+#nav .menu ul li button:hover{ 
+    color:var(--hover-color);
+    background-color: var(--hover-background);
+    cursor: pointer;
+}
+
+#nav .menu ul li button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    margin-top: 0px;
+    margin-right: 20px;
+    transition: 0.7s;
+    color: #bfbfbf;
+    border: none;
+    margin-left: 5px;
+}
+
+
+
+/* nav section css end */
+
+
+/* bannar section css start */
+
+#bannar{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#banner{
+    height: 600px;
+    background-position: cover;
+    background-size: cover;
+}
+#banner.inner_container{
+    width: 40%;
+}
+#bannar .h3{
+        font-size: 50px;
+        line-height: 70px;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: var(--primary-color); 
+}
+
+#bannar .h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 7px;
+}
+
+#bannar .h4{
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8484bf;
+    letter-spacing: 17px;
+    margin: 16px 0 31px 0;
+    text-transform: capitalize;
+}
+
+
+#bannar .p2{
+    font-size: 14px;
+    color: #444444;
+    width: 470px;
+    padding: 15px 0;
+    margin-bottom: 16px;
+    
+ }
+
+#bannar .bannar_ancor {
+    background-color: #8484bf;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 16px; 
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: 0.75s;
+}
+
+
+#bannar .bannar_ancor:hover{
+    background-color: gold;
+    color: black;
+}
+
+
+#bannar button{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background-color:#ffffff;
+    color: #8484bf; 
+    border: none;
+    transition: 0.7s;
+    font-size: 30px;
+}
+
+#bannar button:hover{
+    color: white;
+    background-color:#8484bf; 
+    cursor: pointer;
+}
+
+/* bannar css section end */
+
+#about .row {
+    padding: 100px 0;
+}
+#about .inner_container h4 {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+#about .inner_container h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 31px;
+    text-transform: capitalize;
+}
+
+#about ul li{
+   margin: 30px 30px;
+   color:var(--about-color);
+  }
+  
+#about .btn a{
+    background-color:var(--hover-color);
+    color:var(--about-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    display:inline-block;
+    transition: 0.75s;
+    box-shadow: 10px 10px 5px var(--box-color);
+ 
+}
+#about .btn a:hover{
+    border: var(--light-color);
+    color: var(--text-color);
+}
+#about .btn a{
+    background-color: #ffffff;
+    color:var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 7px;
+    margin-left: 20px;
+    display: inline-block;
+    transition: 0.75s;
+    box-shadow: 10px 10px 5px var(--box-color);
+ 
+}
+#about .about_a:hover,#about .about_b:hover{
+    background-color: var(--hover-color);
+}
+/* =======================skill section css=============== */
+#skills{
+    padding-bottom:100px;
+}
+
+#skills .skill-img img{
+    width:100%;
+} 
+#skills .skill-img{
+   
+    width:60%;
+}
+#skills .skills_text{
+    width:39%
+}
+#skills .skill-content h2{
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 29px;
+}
+#skills .skill-content h4{
+    font-weight:300;
+    font-size: 14px;
+}
+
+#skills .skill-content p {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 24px;
+    margin: 15px 5px;
+}
+ #skills .skill_card .skill_card_info{
+    width:80%;
+}
+#skills .skill_card .skill_card_icon{
+    width:20%;
+}
+#skills .skill_card .skill_card_info h3{
+    font-weight: 500;
+    line-height: 44px;
+}
+
+#skills .skill_card_icon img{
+    display: block;
+    margin-left: auto;
+    border:15px solid var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+.skill_track{
+    width:100%;
+    height:10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+.skill_bar{
+    height:100%;
+    border-radius: 10px;
+    margin-left: auto;
+    text-align: left;
+}
+.skill_bar span{
+    display: inline-block;
+    transform: translateY(-25px);
+    font-size: 14px;
+}
+.skill_card{
+    margin-bottom: 23px;
+}
